@@ -1,0 +1,54 @@
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div>
+        <div>
+
+            <form action="index.html" method="post">
+                <h1>Cadastrar usuário</h1>
+
+                Nome: <input type="text" name="nome"><br>
+                Email: <input type="email" name="email"><br>
+                Senha: <input type="password" name="senha"><br>
+                Confirma senha: <input type="password" name="confirma"><br>
+
+                Idade:
+                <input type="radio" name="idade" value="menor"> Menor de 18
+                <input type="radio" name="idade" value="maior"> 18 ou mais
+                <br>
+
+                Descrição:<br>
+                <textarea name="descricao"></textarea><br>
+
+                Perfil trabalho:
+                <select name="perfil">
+                    <option>Desenvolvedor</option>
+                    <option>Designer</option>
+                    <option>Gestão</option>
+                    <option>Outro</option>
+                </select>
+                <br>
+
+                Interesses:
+                <input type="checkbox" name="html"> HTML
+                <input type="checkbox" name="css"> CSS
+                <input type="checkbox" name="js"> JavaScript
+                <input type="checkbox" name="php"> PHP
+                <br>
+
+                <button type="submit">Enviar dados</button>
+
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
