@@ -1,0 +1,255 @@
+/* Arquivo de estilos CSS para o projeto */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* O box-sizing: border-box faz com que o tamanho total dos elementos inclua o padding e a borda, evitando alterações indesejadas na largura e altura. */
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    /* Define a família de fontes para o texto */
+    line-height: 1.6;
+    /* Define o espaçamento entre linhas para melhor legibilidade */
+    color: #837474;
+    /* Define a cor do texto */
+    background-color: #f4f4f4;
+    /* Define a cor de fundo da página */
+    padding: 20px;
+    /* Adiciona espaçamento interno ao redor do conteúdo */
+}
+
+.container {
+    max-width: 800px;
+    /* Define a largura máxima do container */
+    margin: 0 auto;
+    /* Centraliza o container horizontalmente */
+    background-color: rgb(252, 252, 252);
+    /* Define a cor de fundo do container */
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    /* Adiciona uma sombra leve ao redor */
+    border-radius: 10px;
+    /* Arredonda os cantos do container */
+   
+}
+
+/* Diferença entre <main>, <article> e <section>:
+   - <main>: Representa o conteúdo principal da página, único por página.
+   - <article>: Representa um conteúdo independente e reutilizável, como um post de blog.
+   - <section>: Agrupa conteúdo relacionado, como seções de uma página. */
+
+#main-header {
+    background: linear-gradient(90deg, #228B22, rgb(0, 0, 0));
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+#main-header h1 {
+    font-size: 2.5em;
+    /* Define o tamanho da fonte do título */
+    margin-bottom: 10px;
+    /* Adiciona margem inferior ao título */
+    font-weight: 300;
+    /* Define o peso da fonte para negrito */
+}
+
+img {
+    border-radius: 50%;
+    /* Torna a borda da imagem arredondada, criando um círculo */
+    border: 3px solid #929c00;
+    /* Adiciona uma borda sólida roxa ao redor da imagem */
+}
+
+article {
+    padding: 60px;
+    /* Adiciona espaçamento interno ao conteúdo do article */
+}
+
+h2 {
+    font-size: 24px;
+    /* Define o tamanho da fonte do título */
+    color: #333;
+    /* Define a cor do texto */
+    margin-bottom: 15px;
+    /* Adiciona margem inferior */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    font-weight: bold;
+    /* Define o peso da fonte para negrito */
+}
+/*seletor alinhado*/
+ol>li {
+    list-style: none;
+    /* Criando um novo contador */
+    counter-increment: item;
+    /* Incrementa o contador para numeração personalizada */
+    margin-bottom: 15px;
+    /* Espaçamento inferior entre os itens */
+    position: relative;
+    /* Permite posicionamento absoluto do pseudo-elemento */
+    padding: 10px 10px 10px 40px;
+    /* Espaçamento interno, com espaço à esquerda para o número */
+    background-color: #e9e9e9;
+    /* Cor de fundo clara para os itens */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    border-left: 5px solid #659c00;
+    /* Borda esquerda roxa */
+}
+
+/* O seletor descendente (ex: ol li) seleciona todos os li dentro de ol, em qualquer nível.
+   O seletor de filho direto (ex: ol > li) seleciona apenas os li que são filhos diretos de ol. */
+
+ol>li::before {
+    content: counter(item);
+    /* Exibe o número do contador com estilo personalizado*/
+    position: absolute;
+    /* Posicionamento absoluto em relação ao li */
+    left: -15px;
+    /* Distância da esquerda do li */
+    top: -15px;
+    /* Centraliza verticalmente */
+    transform: translateY(-50%);
+    /* Ajusta para centralização exata */
+    background: #228B22;
+    /* Fundo verde */
+    color: white;
+    /* Cor do texto branca */
+    width: 25px;
+    /* Largura do círculo */
+    height: 25px;
+    /* Altura do círculo */
+    border-radius: 50%;
+    /* Forma circular */
+    display: flex;
+    /* Usa flexbox para centralizar o número */
+    align-items: center;
+    /* Centraliza verticalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    font-weight: bold;
+    /* Número em negrito */
+    font-size: 14px;
+    /* Tamanho da fonte */
+}
+
+article section section {
+    background-color: #f9f9f9; /* Define a cor de fundo da seção */
+    padding: 15px; /* Adiciona espaçamento interno */
+    margin: 10px 0; /* Adiciona margem superior e inferior */
+    border-radius: 8px; /* Arredonda os cantos */
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1); /* Adiciona uma sombra leve */
+}
+
+a {
+    color: #667eea; /* Define a cor do link */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    border-bottom: 2px solid transparent; /* Adiciona uma borda inferior transparente para efeito */
+}
+
+a:hover {
+    color: #667eea; /* Altera a cor do link ao passar o mouse */
+    border-bottom-style: solid; /* Altera o estilo da borda inferior para sólido */
+}
+
+.titulo-formacao {
+    font-size: 22px; /* Define o tamanho da fonte do título */
+    font-weight: bold; /* Define o peso da fonte para negrito */
+    color: #333; /* Define a cor do texto */
+    margin-bottom: 15px; /* Adiciona margem inferior */
+    transition: color 0.3s ease; /* Adiciona uma transição suave para mudanças de cor */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+}
+
+.titulo-formacao:hover {
+    color: #228B22; /* Altera a cor ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do título */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Adiciona uma sombra ao texto para efeito de destaque */
+}
+
+
+
+#main-header figure {
+    margin: 0;
+}
+
+#main-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+#main-header address {
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.main-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px 0 20px 0;
+    color: #333;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+}
+
+.numbered-section {
+    position: relative;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0000001a;
+}
+
+.numbered-section::before {
+    content: attr(data-number);
+    position: absolute;
+    left: -30px;
+    top: 20px;
+    background: #228B22;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.numbered-section h3 {
+    margin-top: 0;
+}
+
+.numbered-section ol > li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px 15px 15px 50px;
+    border-radius: 8px;
+}
+
+.numbered-section ol > li section p {
+    margin: 0;
+}
+
+.numbered-section ol > li section a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.numbered-section ol > li section a:hover {
+    border-bottom-color: #667eea;
+    text-decoration: none;
+}
