@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <title>Café com Desenvolvimento</title>
 </head>
 <body>
-    <h1>USO DE LISTAS</h1>
+    <div class="container">
+        <header>
+            <h1>Café com Desenvolvimento</h1>
+        </header>
 
-    <h2>Lista ordenada de livros</h2>
-    <ol start="10">
-        <li>Vidas Secas</li>
-        <li>Os Miseráveis</li>
-        <li>O Peregrino</li>
-        <li>Cartas de um Diabo ao seu Aprendiz</li>
-    </ol>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
 
-    <h2>Lista ordenada de autores</h2>
-    <ol type="A" start="5">
-        <li>Graciliano Ramos</li>
-        <li>Victor Hugo</li>
-        <li>John Bunyan</li>
-        <li>C. S. Lewis</li>
-    </ol>
+        <section>
+            <h3>Bem-vindo</h3>
+            <img id="main-image" src="IMG.CAFE.webp" alt="Cafeteria" />
+            <p>No Café com Desenvolvimento, combinamos o prazer de um bom café com o mundo da inovação digital. 
+            Oferecemos uma seleção cuidadosa de livros que abordam temas como desenvolvimento de software, 
+            startups e empreendedorismo...</p>
+            <ol>
+                <li><a href="https://www.amazon.com.br/Pai-Rico-Pai-Pobre-Robert/dp/8550801488" target="_blank">Pai Rico Pai Pobre</a></li>
+                <li><a href="https://www.amazon.com.br/segredos-mente-milion%C3%A1ria-Harv-Eker/dp/8575422391" target="_blank">Os Segredos da Mente Milionária</a></li>
+                <li><a href="https://www.amazon.com.br/Quem-Pensa-Enriquece-Guia-Estudos/dp/6555341521" target="_blank">Quem Pensa Enriquece</a></li>
+            </ol>
+        </section>
 
-    <h2>Lista não ordenada com quadrado - Editoras</h2>
-    <ul style="list-style-type: square;">
-        <li>Thomas Nelson Brasil</li>
-        <li>Ciência Moderna</li>
-        <li>Novatech</li>
-        <li>Amazon</li>
-    </ul>
+        <footer>
+            <p>Praça Nilze Mendes, R. Carlos Lindenberg, 104 - Jardim Camburi, Vitória - ES, 29092-110 | Phone: 27 - 99988-2522</p>
+            <p>Aberto Segunda a Domingo - das 07:00 às 21:00</p>
+        </footer>
+    </div>
 </body>
 </html>

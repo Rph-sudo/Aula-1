@@ -1,0 +1,119 @@
+/* Body background color */
+body {
+    background-color: #3a3b2f; /* dark olive green */
+}
+
+/* Container styles */
+.container {
+    background-color: #ffffff; /* white */
+    width: 960px; /* define uma largura fixa para o container */
+    margin: auto; /* centraliza o container horizontalmente */
+    padding: 20px;
+}
+
+/* Center image container */
+section {
+    text-align: center;
+}
+
+/* Header and footer background */
+/* Define a cor de fundo para os elementos header e footer */
+header, footer {
+    background-color: #b0c4de; /* light steel blue */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Google font for main title */
+/* Importa fontes do Google Fonts para uso no título principal */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+h1 {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 2.5em;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Link color */
+a {
+    color: #00008b; /* dark blue */
+    margin-right: 15px;
+}
+
+/* Remove underline from links */
+/* A propriedade text-decoration controla a decoração adicionada ao texto, como sublinhado, sobrelinha ou linha através. Definir como none remove essas decorações. */
+a {
+    text-decoration: none;
+}
+
+/* Input and textarea styles */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Focus style for input and textarea */
+input[type="text"]:focus, textarea:focus {
+    background-color: #cce7ff;
+    outline: none;
+}
+
+/* Image size */
+#main-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 960px;
+    margin-bottom: 20px;
+}
+
+/* Navigation menu horizontal */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    margin: 0 10px;
+}
+
+/* Table styles */
+table {
+    width: 400px;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ddd;
+}
+
+table td, table th {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table img {
+    border-radius: 25px;
+    width: 100%;
+}
+
+table tr:hover {
+    background-color: #f0f0f0;
+}
